@@ -1,0 +1,9 @@
+.contact_form{
+    position: center;
+}
+
+
+.has-error .help-block {
+    color: red;
+    font-size: large;
+}

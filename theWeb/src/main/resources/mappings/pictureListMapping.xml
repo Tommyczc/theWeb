@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.theweb.mapper.pictureListmapper">
+
+    <select id="selectListByUserName" resultType="com.example.theweb.dao.pictureDao">
+        select * from picturelist where userName =#{userName}
+    </select>
+
+    <select id="selectList" resultType="com.example.theweb.dao.pictureDao">
+            select * from picturelist
+    </select>
+
+    <insert id="insertPicture" parameterType="com.example.theweb.dao.pictureDao" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO picturelist (userName,pictureUrl,description)
+        values(#{userName},#{pictureUrl},#{description})
+    </insert>
+
+    <delete id="deletePicture" parameterType="com.example.theweb.dao.pictureDao">
+        Delete from picturelist where userName=#{userName} and pictureUrl=#{pictureUrl} and description=#{description}
+    </delete>
+</mapper>
