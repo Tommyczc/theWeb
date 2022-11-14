@@ -85,7 +85,7 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdown2">
                     <li class="dropdown-item" id="adminUserInformation" href="#"><a>User Information</a></li>
                     <li class="dropdown-item" id="adminUploadHistory" href="#"><a>Upload History</a></li>
-                    <li class="dropdown-item" id="adminInsertUser" href="#"><a>Insert User</a></li>
+<%--                    <li class="dropdown-item" id="adminInsertUser" href="#"><a>Insert User</a></li>--%>
 <%--                    <li class="dropdown-item dropdown">--%>
 <%--                        <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1</a>--%>
 <%--                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1">--%>
